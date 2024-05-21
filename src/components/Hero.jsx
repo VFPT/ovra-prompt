@@ -1,20 +1,20 @@
 import React from "react";
-import { FaHome } from "react-icons/fa";
+import { FaRegCircle } from "react-icons/fa";
 
 const Hero = () => {
   return (
     <header className='w-full flex justify-center items-center flex-col'>
       <nav className='flex justify-between items-center w-full mb-10 pt-3'>
-        <a href="" class="text-3xl font-bold hover:opacity-75 transition-all">OvraAI</a>
+        <a href="" class="text-3xl font-bold hover:opacity-75 transition-all flex justify-between items-center">OvraAI</a>
 
         <button
           type='button'
           onClick={() =>
-            window.open("https://vicvenpet.xyz/", "_blank")
+            window.open("https://ovra.ai/", "_self")
           }
           className='black_btn'
         >
-          <FaHome />
+          <FaRegCircle />
         </button>
       </nav>
 
