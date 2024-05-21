@@ -141,11 +141,11 @@
 }
 
 .footer-section ul li {
-  @apply w-1/2 mb-4;
+  @apply w-1/2 mb-1;
 }
 
 .footer-section ul li a {
-  @apply hover:text-purple-500 transition duration-300;
+  @apply hover:text-purple-500 transition duration-300 font-bold;
 }
 
 .footer-bottom {
