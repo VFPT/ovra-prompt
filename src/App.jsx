@@ -1,3 +1,7 @@
+import * as React from "react";
+
+import {NextUIProvider} from "@nextui-org/react";
+
 import Hero from "./components/Hero";
 import Demo from "./components/Demo";
 import Accordion from "./components/Accordion"
@@ -7,18 +11,20 @@ import "./App.css";
 
 const App = () => {
   return (
-    <main>
-      <div className='main'>
-        <div className='gradient' />
-      </div>
+    <NextUIProvider>
+      <main>
+        <div className='main'>
+          <div className='gradient' />
+        </div>
 
-      <div className='app'>
-        <Hero />
-        <Demo />
-        <Accordion />
-        <Footer />
-      </div>
-    </main>
+        <div className='app'>
+          <Hero />
+          <Demo />
+          <Accordion />
+          <Footer />
+        </div>
+      </main>
+    </NextUIProvider>
   );
 };
 
