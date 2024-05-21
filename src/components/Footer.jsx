@@ -1,8 +1,13 @@
 import React from 'react';
 
+import Alert from '@mui/material/Alert';
+
 const Footer = () => {
     return (
         <footer className="footer">
+            <Alert severity="warning">
+                It is not a registered trademark and is not for commercial use.
+            </Alert>
             <div className="footer-content">
                 <div className="footer-section about">
                     <h2 className="footer-title">OvraAI</h2>
@@ -13,10 +18,10 @@ const Footer = () => {
                 <div className="footer-section links">
                     <h2 className="footer-title">Quick Links</h2>
                     <ul>
-                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li><a href="#policy">Policy</a></li>
+                        <li><a href="#tos">TOS</a></li>
                     </ul>
                 </div>
             </div>
