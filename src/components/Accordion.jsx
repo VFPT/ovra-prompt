@@ -50,43 +50,55 @@ export default function CustomizedAccordions() {
   };
 
   return (
-    <div className='w-full max-w-xl pb-20 rounded-sm gap-3'>
+    <div className='w-full max-w-xl pb-36 rounded-sm gap-3'>
     <div>
         <h2 className="faq-title">FAQ</h2>
     </div>
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
           <Typography>
-            <p className='font-bold '>How do I summarize articles using OvraAI?</p>
+            <p className='font-bold '>¿Cómo resumo artículos con OvraAI?</p>
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Just paste the article link, wait and let OvraAI summarize the article for you.
+            Sólo tienes que pegar el enlace del artículo, esperar y dejar que OvraAI resuma el artículo por ti.
           </Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
           <Typography>
-            <p className='font-bold'>Do I need an account to use OvraAI?</p>
+            <p className='font-bold'>¿Necesito una cuenta para utilizar OvraAI?</p>
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Yes, you typically need to log in or create an account to use OvraAI's features.
+            En absoluto, no necesita iniciar sesión ni crear una cuenta para utilizar las funciones de OvraAI.
           </Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
           <Typography>
-            <p className='font-bold'>How long does it take to generate a summary?</p>
+            <p className='font-bold'>¿Cuánto se tarda en generar un resumen?</p>
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            The time varies depending on the length of the article, but it usually takes a few moments.
+            El tiempo varía en función de la longitud del artículo, pero suele tardar unos instantes.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+        <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
+          <Typography>
+            <p className='font-bold '>¿Cuántos artículos puedo resumir?</p>
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Puede resumir tantos artículos como desee, hasta que se agoten las solicitudes disponibles.
           </Typography>
         </AccordionDetails>
       </Accordion>

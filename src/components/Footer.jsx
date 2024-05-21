@@ -7,16 +7,14 @@ const Footer = () => {
                 <div className="footer-section about">
                     <h2 className="footer-title">OvraAI</h2>
                     <p>
-                        Dedicated to improving people's future, with AI technology. In an economical, accessible and simple way.
+                        Herramienta gratuita para resumir artículos gratis con IA.
                     </p>
                 </div>
                 <div className="footer-section links">
-                    <h2 className="footer-title">Quick Links</h2>
+                    <h2 className="footer-title">Explora</h2>
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#tos">TOS</a></li>
+                        <li><a href="mailto:hello@vicvenpet.xyz">Correo</a></li>
+                        <li><a href="https://vicvenpet.xyz">Sobre mí</a></li>
                     </ul>
                 </div>
             </div>

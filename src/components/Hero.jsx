@@ -1,5 +1,5 @@
 import React from "react";
-import { FaRegCircle } from "react-icons/fa";
+import { GoHomeFill } from "react-icons/go";
 
 const Hero = () => {
   return (
@@ -10,20 +10,20 @@ const Hero = () => {
         <button
           type='button'
           onClick={() =>
-            window.open("https://ovra.ai/", "_self")
+            window.open("https://vicvenpet.xyz/", "_self")
           }
           className='black_btn'
         >
-          <FaRegCircle />
+          <GoHomeFill />
         </button>
       </nav>
 
       <h1 className='head_text'>
-        Summarize Articles with <br className='max-md:hidden' />
-        <span className='purple_gradient '>OvraAI and GPT-4o</span>
+        Resume artículos con <br className='max-md:hidden' />
+        <span className='purple_gradient '>OvraAI & GPT-4o</span>
       </h1>
       <h2 className='desc'>
-        Summarise articles simply, efficiently and with the latest IA GPT technology even more cheaply with OvraAI.
+        Hazlo simple, eficiente y con la última tecnología IA GPT, completamente gratis con OvraAI.
       </h2>
     </header>
   );

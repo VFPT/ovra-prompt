@@ -84,7 +84,7 @@ const Demo = () => {
 
           <input
             type='url'
-            placeholder='Paste the article link'
+            placeholder='Pega el link del artículo'
             value={article.url}
             onChange={(e) => setArticle({ ...article, url: e.target.value })}
             onKeyDown={handleKeyDown}
