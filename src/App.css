@@ -151,3 +151,7 @@
 .footer-bottom {
   @apply text-center mt-4 text-sm;
 }
+
+.faq-title {
+  @apply text-3xl font-extrabold mb-4 text-black;
+}

@@ -1,5 +1,6 @@
 import Hero from "./components/Hero";
 import Demo from "./components/Demo";
+import Accordion from "./components/Accordion"
 import Footer from "./components/Footer"
 
 import "./App.css";
@@ -14,6 +15,7 @@ const App = () => {
       <div className='app'>
         <Hero />
         <Demo />
+        <Accordion />
         <Footer />
       </div>
     </main>

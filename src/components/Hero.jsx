@@ -10,7 +10,7 @@ const Hero = () => {
         <button
           type='button'
           onClick={() =>
-            window.open("https://ovra.ai/", "_blank")
+            window.open("https://vicvenpet.xyz/", "_blank")
           }
           className='black_btn'
         >

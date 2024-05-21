@@ -1,13 +1,8 @@
 import React from 'react';
 
-import Alert from '@mui/material/Alert';
-
 const Footer = () => {
     return (
         <footer className="footer">
-            <Alert severity="warning">
-                It is not a registered trademark and is not for commercial use.
-            </Alert>
             <div className="footer-content">
                 <div className="footer-section about">
                     <h2 className="footer-title">OvraAI</h2>
