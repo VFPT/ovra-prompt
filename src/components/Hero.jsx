@@ -1,10 +1,11 @@
 import React from "react";
+import { FaHome } from "react-icons/fa";
 
 const Hero = () => {
   return (
     <header className='w-full flex justify-center items-center flex-col'>
       <nav className='flex justify-between items-center w-full mb-10 pt-3'>
-        <a href="" class="text-3xl font-bold">OvraAI</a>
+        <a href="" class="text-3xl font-bold hover:opacity-75 transition-all">OvraAI</a>
 
         <button
           type='button'
@@ -13,7 +14,7 @@ const Hero = () => {
           }
           className='black_btn'
         >
-          GitHub
+          <FaHome />
         </button>
       </nav>
 
