@@ -50,52 +50,43 @@ export default function CustomizedAccordions() {
   };
 
   return (
-    <div className='w-full max-w-xl pb-20 rounded-sm'>
+    <div className='w-full max-w-xl pb-20 rounded-sm gap-3'>
     <div>
-        <h1 className="faq-title">FAQ</h1>
+        <h2 className="faq-title">FAQ</h2>
     </div>
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
           <Typography>
-            <p className='font-bold '>How to use it?</p>
+            <p className='font-bold '>How do I summarize articles using OvraAI?</p>
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
+            Just paste the article link, wait and let OvraAI summarize the article for you.
           </Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
           <Typography>
-            <p className='font-bold'>How to use it?</p>
+            <p className='font-bold'>Do I need an account to use OvraAI?</p>
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
+            Yes, you typically need to log in or create an account to use OvraAI's features.
           </Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
           <Typography>
-            <p className='font-bold'>How to use it?</p>
+            <p className='font-bold'>How long does it take to generate a summary?</p>
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
+            The time varies depending on the length of the article, but it usually takes a few moments.
           </Typography>
         </AccordionDetails>
       </Accordion>
