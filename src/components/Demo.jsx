@@ -53,6 +53,15 @@ const Demo = () => {
     setTimeout(() => setCopied(false), 3000);
   };
 
+  const handleDelete = (urlToDelete) => {
+    const updatedAllArticles = allArticles.filter(
+      (item) => item.url !== urlToDelete
+    );
+
+    setAllArticles(updatedAllArticles);
+    localStorage.setItem("articles", JSON.stringify(updatedAllArticles));
+  };
+
   const handleKeyDown = (e) => {
     if (e.keyCode === 13) {
       handleSubmit(e);
@@ -84,9 +93,9 @@ const Demo = () => {
           />
           <button
             type='submit'
-            className='submit_btn peer-focus:border-gray-700 peer-focus:text-gray-700 '
+            className='submit_btn'
           >
-            <p>↵</p>
+            <p>⮞</p>
           </button>
         </form>
 
@@ -95,7 +104,6 @@ const Demo = () => {
           {allArticles.reverse().map((item, index) => (
             <div
               key={`link-${index}`}
-              onClick={() => setArticle(item)}
               className='link_card'
             >
               <div className='copy_btn' onClick={() => handleCopy(item.url)}>
@@ -105,9 +113,18 @@ const Demo = () => {
                   className='w-[40%] h-[40%] object-contain'
                 />
               </div>
-              <p className='flex-1 font-satoshi text-blue-700 font-medium text-sm truncate'>
+              <p
+                className='flex-1 font-satoshi text-blue-700 font-medium text-sm truncate cursor-pointer'
+                onClick={() => setArticle(item)}
+              >
                 {item.url}
               </p>
+              <button
+                onClick={() => handleDelete(item.url)}
+                className='delete_btn text-red-500'
+              >
+                <p>✕</p>
+              </button>
             </div>
           ))}
         </div>
